@@ -9,4 +9,11 @@ in O(1) time
 def q1(x):
     return x | (x-1)
 
+def q2(x, m):
+    return x & (m-1)
 
+def q3(x):
+    if (x & (x-1) == 0):
+        return True
+    else:
+        return False
