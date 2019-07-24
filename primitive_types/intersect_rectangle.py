@@ -42,8 +42,8 @@ class Rectangle():
         for i in range(4):
             v1 = self.p[i]
             v2 = self.p[(i+1)%4]
-            sgn1 = sgn((v2 - v1).ext_prod(p1-v1))
-            sgn2 = sgn((v2 - v1).ext_prod(p2-v1))
+            sgn1 = sgn((v2 - v1).ext_prod(p1 - v1))
+            sgn2 = sgn((v2 - v1).ext_prod(p2 - v1))
             sgn3 = sgn((p2 - p1).ext_prod(v1 - p1))
             sgn4 = sgn((p2 - p1).ext_prod(v2 - p1))
             if(sgn1 != sgn2 and sgn3 != sgn4):
